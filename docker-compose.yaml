@@ -2,14 +2,14 @@ version: '2.1'
 
 services:
     db:
-        image: arminc/clair-db:latest
+        image: projectethan007/clair-db:latest
         restart: on-failure
         healthcheck:
             test: nc -z db 5432
             interval: 1s
             retries: 20
     clair:
-        image: arminc/clair-local-scan:v2.0.3
+        image: projectethan007/clair-local-scan:v2.0.3
         links:
         - db:postgres
         depends_on:
@@ -21,7 +21,7 @@ services:
             interval: 1s
             retries: 20
     scanner:
-        image: quay.io/usr42/clair-container-scan:latest
+        image: projectethan007/clair-container-scan:latest
         links:
         - clair
         volumes:

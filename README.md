@@ -36,11 +36,3 @@ The easiest (but not most secure way) of integrating into your CI/CD tool is to 
 curl -s https://raw.githubusercontent.com/usr42/clair-container-scan/master/clair-container-scan.sh | sh -s -- alpine:3.4
 ```
 
-__WARNING:__ You should never pipe a remote-script directly into a shell, unless you completely trust the source and integrity of the file to execute. Usually, it is better to download the file, validate its input, and run you local, validated version.
-
-## Credits
-* Docker
-* docker-compose
-* [Clair Vulnerability Scanner](https://github.com/coreos/clair)
-* [Clair-Scanner](https://github.com/arminc/clair-scanner) (release v8 is included)
-* [clair-local-scan](https://github.com/arminc/clair-local-scan)

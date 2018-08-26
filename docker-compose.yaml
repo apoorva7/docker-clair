@@ -9,7 +9,7 @@ services:
             interval: 1s
             retries: 20
     clair:
-        image: projectethan007/clair-local-scan:v2.0.3
+        image: projectethan007/clair-local-scan:latest
         links:
         - db:postgres
         depends_on:

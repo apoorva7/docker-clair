@@ -33,6 +33,6 @@ If there are findings, the output will list details in json.
 The easiest (but not most secure way) of integrating into your CI/CD tool is to run following one-liner (replace `alpine:3.4` with the image you want to scan):
 ```
 # to scan alpine:3.4 again
-curl -s https://raw.githubusercontent.com/usr42/clair-container-scan/master/clair-container-scan.sh | sh -s -- alpine:3.4
+curl -s https://raw.githubusercontent.com/projectethan007/docker-clair/master/clair-container-scan.sh | sh -s -- alpine:3.4
 ```
 
